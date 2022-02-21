@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <Header class="head">
+      <menu class="head__menu">
+        <li class="head__category head__category--active">Города</li>
+      </menu>
+      <button class="head__add">Добавить</button>
+    </Header>
+    <div class="container">
+      <div class="card1">
+        <div class="card1__box-img"></div>
+        <h3 class="card1__title">Москва</h3>
+        <p class="card1__description">Хороший город для покорения вершин и всего такого. Много веселья и друзей</p>
+        <ul class="card1__notes">
+          <li class="card1__note">Самый большой в мире</li>
+          <li class="card1__note">Самый большой в мире</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__main">
+          <div class="card__box-img card__box-img--add">
+            <button class="card__add-img">
+              <img src="flower.png" alt="" class="card__img-icon">
+              Добавить картинку
+              <input type="file" name="" id="" class="card__file">
+            </button>
+          </div>
+          <div class="card__box-title">
+             <input type="text" class="card__add-title" placeholder="Название">
+          </div>
+          <div class="card__box-description">
+            <textarea class="card__add-description" placeholder="Описание"></textarea>
+          </div>
+          <ul class="card__box-notes">
+            <li class="card__note"><input type="text" class="card__add-title" placeholder="Примечание"></li>
+            <button class="card__add-note"></button>
+          </ul>
+          <button class="card__copy card__add">Добавить</button>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__main">
+          <div class="card__box-img">
+            <img class="card__img" src="moscow.jpg" alt="">
+          </div>
+          <div class="card__box-title">
+            <h2 class="card__title">Москва</h2>
+          </div>
+          <div class="card__box-description">
+            <p class="card__description">Хороший город для покорения вершин и всего такого. Много веселья и друзей</p>
+          </div>
+          <ul class="card__box-notes">
+            <li class="card__note">Самый большой в мире</li>
+            <li class="card__note">Самый большой в мире</li>
+          </ul>
+        </div>
+        <div class="card__all card__all--active">
+          <div class="card__box-title">
+            <input type="text" class="card__link" value="http://localhost:3000/">
+            <button type="button" class="card__copy">Копировать</button>
+          </div>
+          <div class="card__box-description">
+            <p>{</p>
+            <p class="card__json card__json--start">
+              title: <span class="card__json--text">'Moscow'</span>,
+            </p>
+            <p class="card__json card__json--start">
+              imgUrl: <span class="card__json--text">'http://localhost:3000/'</span>,
+            </p>
+            <p class="card__json card__json--start">
+              description: <span class="card__json--text">'Хороший город для покорения вершин и всего такого. Много веселья и друзей'</span>,
+            </p>
+            <p class="card__json card__json--start">notes: [<span class="card__json--text">'Самый большой в мире'</span>, <span class="card__json--text">'Самый большой в мире'</span>]</p>
+            <p>}</p>
+          </div>
+        </div>
+      </div>
+       <div class="card">
+          <div class="card__main">
+            <div class="card__box-img">
+              <div class="card__img--skelet"></div>
+            </div>
+            <div class="card__box-title">
+              <div class="card__title--skelet"></div>
+            </div>
+            <div class="card__box-description">
+              <div class="card__description--skelet"></div>
+            </div>
+            <ul class="card__box-notes">
+              <li class="card__note--skelet"></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
