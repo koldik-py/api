@@ -1,0 +1,38 @@
+.coin-list {
+
+	margin-top: 20px;
+
+	background: rgba(80, 8, 170, 1);
+	color: white;
+	border-radius: 20px;
+	min-height: 266px;
+	padding: 0 25px;
+	display: flex;
+	&--history {
+		padding: 0;
+	}
+	&__tr{
+		border-right: 1px solid rgba(255, 255, 255, .8);
+		&:last-child {
+			border: none;
+		}
+	}
+	&__cell{
+		width: 150px;
+		height: 2.5em;
+		font-size: 14px;
+		border-bottom: 1px solid rgba(255, 255, 255, .8);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&--min {
+			width: 44px;
+		}
+		& + & {
+			border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+		}
+		&--coin {
+			font-family: 'Roboto';
+		}
+	}
+}
