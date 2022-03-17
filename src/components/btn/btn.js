@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import './btn.scss';
-import up from '../coin-list/up.svg';
-import down from '../coin-list/down.svg';
+
+import OnCoin from './onCoin/OnCoin'
+//import up from '../coin-list/up.svg';
+//import down from '../coin-list/down.svg';
 
 class Btn extends Component {
 	constructor(props) {
@@ -9,18 +11,32 @@ class Btn extends Component {
 	}
 
 	state = {
-
 	}
-	onClick = (e) => console.log(e.target)
-	// componentDidMount() {	console.log('Btn создался') }
- 	// componentDidUpdate() { console.log('Btn обновился') }
-	// componentWillUnmount() { console.log('Btn обновился')	}
 
 	render() {
-	
+		const coin = this.state.coin
 		return (
+			
+				<OnCoin/>
+			
+			)
+		//return one()
+	}
+}
+
+function one() {
+	return (
 			<div className="deal">
-				<div className="deal__token">Монетка</div>
+				
+				<div className="deal__token">
+					Монета
+					<div className="deal__count">
+						<div className="deal__token--alt1">Монета</div>
+						<div className="deal__token--alt2">Монета</div>
+						<div className="deal__token--alt3">Монета</div>
+					</div>
+				</div>
+				
 				<div className="deal__token">Цена</div>
 				<div className="deal__token"
 						onClick={(e) => this.onClick(e)}
@@ -31,7 +47,6 @@ class Btn extends Component {
 								>Подтвердить</button>
 			</div>
 			);
-	}
 }
 
 export default Btn

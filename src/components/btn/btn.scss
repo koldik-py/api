@@ -1,5 +1,6 @@
 .deal {
-	margin-top: 15px;
+	position: relative;
+	margin-top: 50px;
 	min-width: 836px;
 	min-height: 100px;
 	border-radius: 15px;
@@ -9,8 +10,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-
+	&__count {
+		position: absolute;
+		
+	}
 	&__token {
+		position: relative;
 		padding: 12px 2em;
 		
 
@@ -19,10 +24,62 @@
 		font-size: 18px;
 
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		border-radius: 25px;
 
+
+		border-radius: 25px;
+		transition: 0.6s;
+		&--alt1{
+			padding: 12px 2em;
+		
+
+			background: #D5E5F2;
+			color: #141313;
+			font-size: 18px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			border-radius: 25px 25px 0 0;
+			transition: 0.6s;
+		}
+		&--alt2{
+			padding: 12px 2em;
+		
+
+			background: #D5E5F2;
+			color: #141313;
+			font-size: 18px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			transition: 0.6s;
+		}
+		&--alt3{
+			padding: 12px 2em;
+		
+
+			background: #D5E5F2;
+			color: #141313;
+			font-size: 18px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			transition: 0.6s;
+			border-radius: 0 0 25px 25px;
+		}
+		&--active {
+		}
 		&--btn {
 			font-family: 'Roboto';
 			background: #211A04;
